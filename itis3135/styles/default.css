@@ -31,7 +31,12 @@ main
 
 h1
 {
-  font-family: ;
+  text-align: center;
+}
+
+p
+{
+  text-align: center;
 }
 
 nav
