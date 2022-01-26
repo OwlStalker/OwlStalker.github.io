@@ -2,7 +2,7 @@ body
 {
   font-family: Tahoma, sans-serif;
   color: silver;
-  background-color: #003566;
+  background-color: #dddf00;
   margin-left: 150px;
   margin-right: 150px;
 }
@@ -11,7 +11,7 @@ header
 {
   font-family: Courier, serif;
   text-align: center;
-  color: #ffc300;
+  color: #003566;
   margin-top: 50px;
   margin-bottom: 50 px;
 }
