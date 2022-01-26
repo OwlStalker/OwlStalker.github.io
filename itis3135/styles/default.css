@@ -16,3 +16,20 @@ header
   margin-bottom: 50 px;
 }
 
+footer
+{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+main
+{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+h1
+{
+  
+}
