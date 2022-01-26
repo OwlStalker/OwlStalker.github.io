@@ -3,6 +3,8 @@ body
   font-family: Tahoma, sans-serif;
   color: silver;
   background-color: #003566;
+  margin-left: 150px;
+  margin-right: 150px;
 }
 
 header
@@ -11,3 +13,4 @@ header
   text-align: center;
   color: #ffc300;
 }
+
