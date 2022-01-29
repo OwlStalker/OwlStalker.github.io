@@ -29,7 +29,7 @@ main
   margin-right: 100px;
 }
 
-h1, h2
+h1, h2, h3
 {
   text-align: center;
 }
@@ -53,4 +53,17 @@ figure
 nav
 {
   text-align: center;
+}
+
+th, td
+{
+  text-align: left;
+  border: #ffc300;
+  vertical-align: middle;
+  padding: .2em;
+}
+
+table 
+{
+
 }
