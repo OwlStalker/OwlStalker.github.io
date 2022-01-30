@@ -11,7 +11,7 @@
       <h1>David Kravchuk | ITIS 3135 | Diesel Kangaroos </h1>
     </header>
     <nav>
-        <a href = "./">Home</a>
+        <a href = "index.html">Home</a>
         _ 
         <a href = "introduction.html">Introduction</a> 
         _ 
@@ -19,34 +19,54 @@
         _
         <a href = "tables.html">HTML Tables</a>
         _
-        <a href = "forms.html">Forms</a>  
+        <a href = "forms.html">Forms</a> 
         _ 
         <a href = "https://webpages.charlotte.edu/dkravchu/">UNCC Homepage</a>
     </nav>
 
     <main>
-        <h2> Contract </h2>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" name="name" id="name"><br>
+            
+            <label for="phoneNum">Phone Number:</label><br>
+            <input type="text" name="phoneNum" id="phoneNum"><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="text" name="email" id="email"><br><br>
+            
+            <input type="checkbox" name="Txt" id="Txt">
+            <label for="Txt">Receive Txt Updates</label><br><br>
+            
+            <label for="Question">Which kind of bear is best?</label><br>
+            <input type="radio" name="Question" id="bear" value="Black Bear">
+            <label for="bear">Bears</label><br>
+            <input type="radio" name="Question" id="beets" value="Beets">
+            <label for="beets">Beets</label><br>
+            <input type="radio" name="Question" id="Battle" value="Battle">
+            <label for="Battle">Battlestar Galactica</label><br><br>
 
-        <figure>
-          <a href = "images/Small.jpg">
-              <img src="images/Small.jpg" alt = "Me in the heart of Kiev/Ukraine">
-          </a>
-          <figcaption>Me in the heart of Kiev/Ukraine</figcaption>
-        </figure>
-        <ul>
-          <li><b>Personal Background:</b> Hello, I'm David. I'm 22 years old and I'm a senior at UNC Charlotte. 
-              I was born in Sacramento, CA but raised here in Charlote since I was three.</li>
-          <li><b>Professional:</b> I've worked many jobs but the one that I enjoyed make the most money from was fixing appliances.</li>
-          <li><b>Academic Background:</b> Graduated from Independence High School back in 2018. I am currently pursuing my Bachelors in Cybersecurity.</li>
-          <li><b>Background in this Subject:</b> I have no experience with html but I am getting the hang of it.</li>
-          <li><b>Courses I'm Taking & Why:</b></li>
-          <ul>
-            <li><b>ITIS 3135:</b> Web-Based Application Design and Development: required for my degree</li>
-            <li><b>ITIS 3200:</b> Intro to Info Security & Privacy: required for my degree</li>
-            <li><b>ITSC 3146:</b> Intro to Operating Systems & Networking: required for my degree</li>
-            <li><b>ITSC 3155:</b> Software Engineering: required for my degree</li>
-          </ul>
-        </ul>
+            <label for="Subscription">Subscription:</label>
+            <select name="Subscription" id="Subscription" size="1">
+                <option value="3">3 Month</option>
+                <option value="6">6 Month</option>
+                <option value="9">9 Month</option>
+                <option value="12">12 Month</option>
+            </select><br><br><br><br><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="reset">
+
+
+
+
+
+
+
+        </form>
+        <h2> 
+          Contract 
+        </h2>
     </main>
 
     <footer>

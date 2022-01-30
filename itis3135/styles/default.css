@@ -13,7 +13,9 @@ header
   text-align: center;
   color: #ffc300;
   margin-top: 50px;
-  margin-bottom: 50 px;
+  margin-bottom: 50px;
+  border-style: inset;
+  border-color: #ffc300;
 }
 
 footer
@@ -32,6 +34,7 @@ main
 h1, h2, h3
 {
   text-align: center;
+  color: #ffc300;
 }
 
 p
@@ -42,7 +45,7 @@ p
 a:hover
 {
   text-decoration: underline;
-  color: mediumseagreen;
+  color: #ffc300;
 }
 
 figure
@@ -58,12 +61,34 @@ nav
 th, td
 {
   text-align: left;
-  border: #ffc300;
+  border: 1px #ffc300;
   vertical-align: middle;
-  padding: .2em;
+  padding: .2em 1em .2em .3em;;
 }
 
-table 
+th
 {
+  background-color: #2A2E34;
+}
 
+table
+{
+  table-layout: auto;
+  border-style: groove;
+  border-color: #ffc300;
+  margin: 0px auto;
+}
+
+table tr:nth-child(even)
+{
+  background-color: #001d3d;
+}
+
+form
+{
+  background-color: #ffc300;
+  color: #001d3d;
+  text-align: center;
+  border-style: inset;
+  margin-top: 50px;
 }
