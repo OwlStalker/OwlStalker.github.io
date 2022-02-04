@@ -2,7 +2,7 @@ body
 {
   font-family: Tahoma, sans-serif;
   color: silver;
-  background-color: #16324F;
+  background-color: #001D3D;
   margin-left: 150px;
   margin-right: 150px;
 }
@@ -41,6 +41,8 @@ p
 {
   text-align: center;
 }
+
+a{color: #76c893;}
 
 a:hover
 {
