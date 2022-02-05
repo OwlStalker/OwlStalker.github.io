@@ -1,8 +1,8 @@
 body
 {
   font-family: Tahoma, sans-serif;
-  color: silver;
-  background-color: #001D3D;
+  color: #001D3D;
+  background-color: #495057;
   margin-left: 150px;
   margin-right: 150px;
 }
@@ -11,11 +11,9 @@ header
 {
   font-family: Courier, serif;
   text-align: center;
-  color: #ffc300;
+  color: #76c893;
   margin-top: 50px;
   margin-bottom: 50px;
-  border-style: inset;
-  border-color: #ffc300;
 }
 
 footer
@@ -34,12 +32,17 @@ main
 h1, h2, h3
 {
   text-align: center;
-  color: #ffc300;
+  color: #76c893;
 }
 
 p
 {
-  text-align: center;
+  text-align: left;
+}
+
+ul
+{
+  list-style-type: upper-roman;
 }
 
 a
@@ -51,7 +54,7 @@ a
 a:hover
 {
   text-decoration: underline;
-  color: #ffc300;
+  color: #001D3D;
 }
 
 figure
@@ -67,7 +70,7 @@ nav
 th, td
 {
   text-align: left;
-  border: 1px #ffc300;
+  border: 1px #76c893;
   vertical-align: middle;
   padding: .2em 1em .2em .3em;;
 }
@@ -81,20 +84,15 @@ table
 {
   table-layout: auto;
   border-style: groove;
-  border-color: #ffc300;
+  border-color: #76c893;
   margin: 0px auto;
-}
-
-table tr:nth-child(even)
-{
-  background-color: #001d3d;
 }
 
 form
 {
-  background-color: #ffc300;
+  background-color: #76c893;
   color: #001d3d;
   text-align: center;
   border-style: inset;
   margin-top: 50px;
-}
+}        
