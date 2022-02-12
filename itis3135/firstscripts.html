@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <title>Firstscripts</title>
+        <link href="styles/default.css" type="text/css" rel="stylesheet">
+        
+        <script src="scripts/defaultscripts.js"></script>
+
+        <style>
+            form{
+                background-color: #001d3d;
+                color: #ffc300;
+                text-align: left;
+                border-style: inset;
+                margin-top: 50px;
+            }
+
+            .button{
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>Firstscripts</h1>
+        </header>
+        <nav>
+            <a href = "./">Home</a>
+            &diams; 
+            <a href = "introduction.html">Introduction</a> 
+            &diams; 
+            <a href = "contract.html">Contract</a>
+            &diams; 
+            <a href = "tables.html">HTML Tables</a>
+            &diams; 
+            <a href = "forms.html">Forms</a>
+            &diams; 
+            <a href = "brand-digital-koala.html">Brand</a>  
+            &diams; 
+            <a href = "website_evaluations.html">Websites Evaluations</a>
+            &diams;
+            <a href = "firstscripts.html">Javascript</a>
+        </nav>
+        
+        <main>
+            <h3>Firstscripts</h3>
+            <script type="text/javascript">
+
+                printTime();
+    
+                function printTime(){
+    
+                    var now = new Date();
+                    var year = now.getFullYear();
+                    var monthNum = now.getMonth() + 1;
+                    var day = now.getDay();
+                    var date = now.getDate();
+                    var hour = now.getHours();
+                    var min = now.getMinutes();
+                    var am_pm;
+    
+                    var month = new Array("January", "February", "March", "April", "May", "June", 
+                                        "July", "August", "Septemeber", "October", "November",
+                                            "December");
+                    
+                    var mtwtfss = new Array("Sunday", "Monday", "Tuesday", "Wensday", "Thursday",
+                                            "Friday", "Saturday");
+    
+                    if(hour >= 12){
+                        hour %= 12;
+                        am_pm = "pm";
+                    }
+                    else
+                        am_pm = "am";
+    
+                    document.write("Today is " + hour + ":" + min + am_pm + " on " 
+                                    + mtwtfss[day] + ", " + month[monthNum] + " " + date 
+                                    + ", " + year + "<br>");
+                }
+            </script>
+
+            <form name="introForm">
+                <button onclick="doubtMe()" id="off/on">Click X to doubt</button>
+                <br><br>
+                Name: <input type="text" name="firstName" id="off/on">
+                <br><br>
+                Enter how you are feeling? 
+                <input type="text" name="feeling" placeholder="Joyful? Despaired?">
+                <button onclick="displayGreeting()" id="off/on">Submit Form</button>
+                <br><br>
+                <button onclick="claimFreeGiftCards()" id="off/on">Click here to claim your free Gift Card!!!</button>
+                <br>
+                <button onclick="weirdFace()" id="off/on">Weird Face</button>
+                <br>
+                <button onclick="bababooey()" id="off/on">bababooey</button>
+                <br>
+            </form>
+            
+        </main>
+
+        <footer>
+
+        </footer>
+    </body>
+</html>
