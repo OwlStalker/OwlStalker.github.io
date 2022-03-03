@@ -54,16 +54,19 @@
                 <a href = "https://jsfiddle.net/user/fiddles/all/">jsfiddle</a>
             </nav>
             <br> 
-            <p> Created by <a href="kravchuklimited.co/index.html">Kravchuk Limited &copy;2022</a>
-            </p>
+            <p> Created by <a href="kravchuklimited.co/index.html">Kravchuk Limited &copy;2022</a></p>
             <p>
-                <a href = "https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fwebpages.charlotte.edu%252Fdkravchu%252Fitis3135%252Fpolygons.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
-                    <img src = "images/button_validation_css.png" alt="CSS"/>
+                <a href = "https://jigsaw.w3.org/css-validator/check/referer" id = "validation_link_css">
+                    <img src = "images/button_validation_css.png" width="88" height="31" alt="CSS picture"/>
                 </a>
-                <a href = "https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.charlotte.edu%2Fdkravchu%2Fitis3135%2Fpolygons.html">
-                    <img src = "images/button_validation_html5.png" alt="HTML"/>
+                <a href = "https://validator.w3.org/check?uri=referer" id = "validation_link_html">
+                    <img src = "images/button_validation_html5.png" width="88" height="31" alt="HTML picture"/>
                 </a>
             </p>
+            <script>        
+                document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+                document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+            </script>
         </footer>
     </body>
 </html>
