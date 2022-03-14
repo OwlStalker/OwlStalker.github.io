@@ -11,29 +11,8 @@
         <header>
             <h1>David Kravchuk | ITIS 3135 | Digital Koala</h1>
         </header>
-        <nav>
-            <a href = "./">Home</a>
-            &diams; 
-            <a href = "introduction.html">Introduction</a> 
-            &diams; 
-            <a href = "contract.html">Contract</a>
-            &diams; 
-            <a href = "tables.html">HTML Tables</a>
-            &diams; 
-            <a href = "forms.html">Forms</a>
-            &diams; 
-            <a href = "brand-digital-koala.html">Brand</a>  
-            &diams; 
-            <a href = "website_evaluations.html">Websites Evaluations</a>
-            &diams;
-            <a href = "firstscripts.html">Javascript</a>
-            &diams;
-            <a href = "polygons.html">Polygons</a>
-            &diams;
-            <a href = "calculator_try.html">Calculator Try</a>
-            &diams;
-            <a href = "calculator.html">Calculator</a>
-        </nav>
+
+        <div data-include="components/nav.html"></div>
 
         <main>
             <h2>Calculator</h2>
@@ -62,31 +41,8 @@
 
         </main>
         <footer>
-        <br>
-        <nav>
-            <a href = "https://webpages.charlotte.edu/dkravchu/">Charlotte</a>
-            <a href = "https://github.com/OwlStalker">Github</a>
-            <a href = "https://owlstalker.github.io/">Github.io</a>
-            <a href = "https://www.freecodecamp.org/DavidKravy">freeCodeCamp</a>
-            <a href = "https://app.codingrooms.com/app/course/itis3135-j-Rwrq0">CodeAcademy</a>
-            <a href = "https://www.linkedin.com/in/david-kravchuk-b7232b229/">LinkedIn</a>
-            <a href = "https://jsfiddle.net/user/fiddles/all/">jsfiddle</a>
-            <a href = "stuff/dog Soup#783&%^#@$!.htm">Crap Page</a>
-        </nav> 
-        <br>
-        <p> Created by <a href="kravchuklimited.co/index.html">Kravchuk Limited &copy;2022</a></p>
-        <p>
-            <a href = "https://jigsaw.w3.org/css-validator/check/referer" id = "validation_link_css">
-                <img src = "images/button_validation_css.png" width="88" height="31" alt="CSS picture"/>
-            </a>
-            <a href = "https://validator.w3.org/check?uri=referer" id = "validation_link_html">
-                <img src = "images/button_validation_html5.png" width="88" height="31" alt="HTML picture"/>
-            </a>
-        </p>
-        <script>        
-            document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
-            document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
-        </script>           
+            <div data-include="components/footer.html"></div>          
         </footer>
+        <script src="scripts/htmlinclude.js"></script>
     </body>
 </html>

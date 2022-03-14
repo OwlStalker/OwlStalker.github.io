@@ -45,7 +45,7 @@ p
 
 a
 {
-  color: #76c893;
+  color: silver;
   text-decoration: none;
 }
 
@@ -73,7 +73,7 @@ nav
 th, td
 {
   text-align: left;
-  border: 1px #ffc300;
+  border: 5px #ffc300;
   vertical-align: middle;
   padding: .2em 1em .2em .3em;;
 }
@@ -83,12 +83,12 @@ th
   background-color: #2A2E34;
 }
 
-table
+table, th, td
 {
   table-layout: auto;
-  border-style: groove;
+  border: 5px #ffc300;
   border-color: #ffc300;
-  margin: 0px auto;
+  margin: 10px auto;
 }
 
 table tr:nth-child(even)

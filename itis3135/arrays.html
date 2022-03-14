@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <title> David Kravchuk | ITIS 3135 | Digital Koala | Arrays</title>
+        <link href = "styles/default.css" type = "text/css" rel = "stylesheet">
+        <!-- link to style sheet here -->
+    </head>
+
+    <body>
+        <header>
+            <h1>David Kravchuk | ITIS 3135 | Digital Koala</h1>
+        </header>
+
+        <div data-include="components/nav.html"></div>
+
+        <main>
+            <h2>Arrays</h2>
+
+            <label for="employees">Employee Names:</label>
+            <select id="employee" name="employee">
+                <option value="Joe">Joe</option>
+                <option value="Alex">Alex</option>
+                <option value="Ener">Ener</option>
+            </select>
+
+            <label for="salary">Enter salary : $</label>
+            <input type="number" id="salary" name="salary">
+            <button onclick="addSalary()" id="addSalary">Add Salary</button>
+            <button onclick="displayResults()" id="displayResults">Display Results</button>
+            <button onclick="displaySalary()" id="displaySalary">Display Salary</button>
+
+            <div id="results"></div>
+            <table id="table_results"></table>
+        </main>
+        
+        <footer>
+            <div data-include="components/footer.html"></div>
+        </footer>
+        <script src="scripts/htmlinclude.js"></script>
+        <script src="scripts/arrays.js"></script>
+    </body>
+</html>
