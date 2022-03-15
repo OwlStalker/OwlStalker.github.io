@@ -3,8 +3,8 @@ body
   font-family: Tahoma, sans-serif;
   color: silver;
   background-color: #001D3D;
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 header
@@ -27,14 +27,26 @@ footer
 
 main
 {
-  text-align: center;
+  text-align: left;
   margin-left: 100px;
   margin-right: 100px;
 }
 
-h1, h2, h3
+h1
 {
   text-align: center;
+  color: #ffc300;
+}
+
+h2
+{
+  text-align: center;
+  color: #ffc300;
+}
+
+h3
+{
+  text-align: left;
   color: #ffc300;
 }
 
@@ -47,6 +59,11 @@ a
 {
   color: silver;
   text-decoration: none;
+}
+
+li
+{
+  margin: 5px 5px 5px 5px;
 }
 
 script
