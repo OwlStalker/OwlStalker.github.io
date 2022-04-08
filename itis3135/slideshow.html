@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <title> David Kravchuk | ITIS 3135 | Digital Koala | Slideshow</title>
-    <link href = "styles/default.css" type = "text/css" rel = "stylesheet">
-    <!-- link to style sheet here -->
+    <link href = "styles/slideshow.css" type = "text/css" rel = "stylesheet">
+    <script src="scripts/jquery-3.6.0.js"></script>
 </head>
 
 <body>
@@ -14,13 +14,60 @@
 
     <div data-include="components/nav.html"></div>
 
-    <main>
         <h2>Slideshow</h2>
-        
-    </main>
+
+        <div class="image-container">
+
+          <a class="previous" onclick="moveSlides(-1)">
+            <i class="fa fa-chevron-circle-left"></i>
+          </a>
+
+          <a class="next" onclick="moveSlides(1)">
+            <i class="fa fa-chevron-circle-right"></i>
+          </a>
+
+          <div class="slide">
+            <div class="slideNumber">1</div>
+
+            <img src="images/jerry.jpg" alt="Jerry">
+          </div>
+
+          <div class="slide">
+            <div class="slideNumber">2</div>
+
+            <img src="images/beach.jpg" alt="Beach">
+          </div>
+
+          <div class="slide">
+            <div class="slideNumber">3</div>
+
+            <img src="images/car.jpg" alt="Car">
+          </div>
+
+          <div class="slide">
+            <div class="slideNumber">4</div>
+
+            <img src="images/dew.jpg" alt="Drink">
+          </div>
+
+          <div class="slide">
+            <div class="slideNumber">5</div>
+
+            <img src="images/will.jpg" alt="Shrek">
+          </div>
+        </div><br>
+
+        <div style="text-align: center">
+          <span class="footerdot" onclick="activeSlide(1)"></span>
+          <span class="footerdot" onclick="activeSlide(2)"></span>
+          <span class="footerdot" onclick="activeSlide(3)"></span>
+          <span class="footerdot" onclick="activeSlide(4)"></span>
+          <span class="footerdot" onclick="activeSlide(5)"></span>
+        </div>
 
     <div data-include="components/footer.html"></div>
     
+    <script src="scripts/slideshow.js"></script>
     <script src="scripts/htmlinclude.js"></script>
   </body>
 </html>

@@ -7,6 +7,10 @@ header{
 
 body
 {
+  background-image: url(hexagon.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   font-family: Courier, serif;
   color: #2a2e34;
   background-color: #ffe985;
@@ -54,4 +58,14 @@ a:hover
 .active{
   background-color: #ffc300;
   color: #2a2e34;
+}
+
+img{
+  padding: 10px;
+  border-radius: 45px;
+  border-color: #2a2e34;
+}
+
+video{
+  border-radius: 45px;
 }
