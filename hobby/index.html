@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title> David Kravchuk | ITIS 3135 | Midterm</title>
+    <script src="scripts/hobby.js"></script>
     <style>
         header{
             font-family: Courier, serif;
@@ -22,10 +23,6 @@
 
         main{
             text-align: left;
-        }
-
-        nav{
-
         }
 
         h1, h2, h3{
@@ -61,6 +58,27 @@
             background-color: #ffc300;
             color: #2a2e34;
         }
+
+
+        .tab{
+            overflow: auto;
+            border: 5px #ffff3f;
+            background-color: #ffff3f;
+            text-align: center;
+        }
+
+        .tabButtons{
+            float: left;
+            padding: 15px 15px;
+            background-color: #495057;
+            transition: 0.5s;
+            color: #ffff3f;
+            
+        }
+
+        .tabContent{
+            border: 1px #ffff3f;
+        }
     </style>
 </head>
 
@@ -70,20 +88,16 @@
     </header>
 
     <main>
-        <h2> 
-          Homepage 
-        </h2>
-
         <div class="tab">
-            <button class="" onclick="">About</button>
-            <button class="" onclick="">Home</button>
-            <button class="" onclick="">when</button>
-            <button class="" onclick="">where</button>
-            <button class="" onclick="">why</button>
-            <button class="" onclick="">how</button>
+            <button class="tabButtons" onclick="openTab(evt, '1')">About</button>
+            <button class="tabButtons" onclick="openTab(evt, '2')">Home</button>
+            <button class="tabButtons" onclick="openTab(evt, '3')">when</button>
+            <button class="tabButtons" onclick="openTab(evt, '4')">where</button>
+            <button class="tabButtons" onclick="openTab(evt, '5')">why</button>
+            <button class="tabButtons" onclick="openTab(evt, '6')">how</button>
         </div>
 
-        <section id="1">
+        <section id="1" class="tabContent">
             <h3>About</h3>
             <p>
                 My name is David Kravchuk. I am a senior at the University of North Carolina at Charlotte.
@@ -102,7 +116,7 @@
             <p>Here is the dream car that I hope to own one day if god gives.</p>
         </section>
 
-        <section id="2">
+        <section id="2" class="tabContent">
             <h3>Home</h3>
             <p>
                 My love for cars started when I was young kid. The idea of riding fast and repairing cars 
@@ -116,7 +130,7 @@
             <p>This is the bad boy that we would constantly be fixing.</p>
         </section>
 
-        <section id="3">
+        <section id="3" class="tabContent">
             <h3>When</h3>
             <p>
                 In 2018 I bought a car off of a salvage auction. It was a 2010 BMW 335i. 
@@ -126,7 +140,7 @@
             </figure>
         </section>
 
-        <section id="4">
+        <section id="4" class="tabContent">
             <h3>Where</h3>
             <p>
                 In 2021 my heart broke when I was crossing an intersection 
@@ -136,7 +150,7 @@
             </figure>
         </section>
 
-        <section id="5">
+        <section id="5" class="tabContent">
             <h3>About</h3>
             <p>
 
@@ -146,7 +160,7 @@
             </figure>
         </section>
 
-        <section id="6">
+        <section id="6" class="tabContent">
             <h3>About</h3>
             <p>
 
