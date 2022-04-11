@@ -30,38 +30,15 @@
             margin-top: 50px;
         }
 
-        ul{
-            list-style-type: none;
-            margin-top: 40px;
-            padding: 0px;
-        }
-
-        li{
-            float: left;
-        }
-
-        li a{
-            display: block;
-            padding: 16px;
-            background-color: #2a2e34;
-            color: #ff8000;
-            text-decoration: none;
-        }
-
         a:hover
         {
             background-color: #ffc300;
             color: #2a2e34;
         }
 
-        .active{
-            background-color: #ffc300;
-            color: #2a2e34;
-        }
-
 
         .tab{
-            overflow: auto;
+            overflow: inherit;
             border: 5px #ffff3f;
             background-color: #ffff3f;
             text-align: center;
@@ -71,13 +48,33 @@
             float: left;
             padding: 15px 15px;
             background-color: #495057;
-            transition: 0.5s;
+            transition: 0.1s;
             color: #ffff3f;
-            
+        }
+
+        .tabButtons.active{
+            background-color: #ffff3f;
+            color: #495057;
         }
 
         .tabContent{
             border: 1px #ffff3f;
+            display: none;
+
+        }
+
+        img{
+            border-radius: 45px;
+            border-style: solid;
+            border-color: #ffff3f;
+        }
+
+        figure{
+            text-align: center;
+        }
+
+        footer{
+            text-align: center;
         }
     </style>
 </head>
@@ -89,20 +86,20 @@
 
     <main>
         <div class="tab">
-            <button class="tabButtons" onclick="openTab(evt, '1')">About</button>
-            <button class="tabButtons" onclick="openTab(evt, '2')">Home</button>
-            <button class="tabButtons" onclick="openTab(evt, '3')">when</button>
-            <button class="tabButtons" onclick="openTab(evt, '4')">where</button>
-            <button class="tabButtons" onclick="openTab(evt, '5')">why</button>
-            <button class="tabButtons" onclick="openTab(evt, '6')">how</button>
-        </div>
+            <button class="tabButtons" onclick="openTab(event, '1')">About Me</button>
+            <button class="tabButtons" onclick="openTab(event, '2')">Home</button>
+            <button class="tabButtons" onclick="openTab(event, '3')">First Car</button>
+            <button class="tabButtons" onclick="openTab(event, '4')">First Car Wreck</button>
+            <button class="tabButtons" onclick="openTab(event, '5')">Latest Car</button>
+            <button class="tabButtons" onclick="openTab(event, '6')">Tuner Car</button>
+        </div><br>
 
         <section id="1" class="tabContent">
             <h3>About</h3>
             <p>
                 My name is David Kravchuk. I am a senior at the University of North Carolina at Charlotte.
                 Ever since I was a young kid I had grown a passion for being a nerd and a love 
-                for cars. More so, a love for cars. It kinda ran through the family if I'm honest.
+                for cars. More so, a love for cars. It kinda runs through the family if I'm honest.
                 I loved to work on a salvaged cars that my dad bought to repair. It would be the weekends
                 where we would get so much done since that was the only time he was home. Ever since I started
                 college back in 2018 I don't have the time or money to continue working on any project car 
@@ -131,42 +128,58 @@
         </section>
 
         <section id="3" class="tabContent">
-            <h3>When</h3>
+            <h3>First Car</h3>
             <p>
-                In 2018 I bought a car off of a salvage auction. It was a 2010 BMW 335i. 
+                In 2018 I bought a car off a salvage auction. It was a 2010 BMW 335i. It was 
+                my first non-front wheel drive car, and it was a lot of fun to drive. I eventually 
+                listed it for sale because it was not a daily driver for the work I was doing at the time.
             </p>
             <figure>
-                <img src="images">
+                <img src="images/IMG_0465.JPG">
+                <img src="images/IMG_0459.JPG">
+                <img src="images/IMG_0466.JPG">
+                <img src="images/IMG_0463.JPG">
             </figure>
         </section>
 
         <section id="4" class="tabContent">
-            <h3>Where</h3>
+            <h3>First Car Wreck</h3>
             <p>
-                In 2021 my heart broke when I was crossing an intersection 
+                In 2021 my heart broke when I was crossing an intersection and a drunk person skimmed the 
+                front of my car, barely tboning me. I then hired a lawyer to handle my case and eventually 
+                got the insurance company to pay out my car since they were hesitant at first. 
             </p>
             <figure>
-                <img src="images">
+                <img src="images/IMG_1087.JPG">
+                <img src="images/IMG_1088.JPG">
+                <img src="images/IMG_0954.JPG">
             </figure>
+            <p>The last picture was me saying goodbye to her out in the tow yard.</p>
         </section>
 
         <section id="5" class="tabContent">
-            <h3>About</h3>
+            <h3>Latest Car</h3>
             <p>
-
+                Recently Toyota anounced a new 2023 GR Corolla model. It features a 1.6-liter 
+                3-cylinder direct/port-injected turbocharged engine, which generates a mighty 
+                300 hp and 273 lb-ft of torque. If this car ever makes its way to the salvage 
+                auction, you best believe I'm bidding for it.
             </p>
             <figure>
-                <img src="images">
+                <img src="images/download.jpg">
             </figure>
         </section>
 
         <section id="6" class="tabContent">
-            <h3>About</h3>
+            <h3>Tuner Car</h3>
             <p>
-
+                I've always wanted to tune my own car one day. The car I would choose to tune 
+                would be a 2016 Toyota GT86 with a swapped CL65 V10 engine in it.
             </p>
             <figure>
-                <img src="images">
+                <img src="images/86.jpg">
+                <img src="images/87.jpg">
+                <img src="images/88.jpg">
             </figure>
         </section>
     </main>
