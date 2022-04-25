@@ -50,10 +50,6 @@ h3
   color: #ffc300;
 }
 
-p
-{
-}
-
 a
 {
   color: silver;
@@ -78,6 +74,17 @@ a:hover
 
 figure
 {
+  text-align: center;
+  border-radius: 45px;
+  border-color: #2A2E34;
+  border: 5px;
+  border-style: solid;
+}
+
+img{
+  border-color: #2A2E34;
+  border: 5px;
+  border-style: solid;
   text-align: center;
 }
 

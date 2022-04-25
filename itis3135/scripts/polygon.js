@@ -9,6 +9,8 @@ function getNumberOfSides(){
     var numSides = parseInt(prompt("Digital Koala wants to tell you the name of a shape" + //Ask for a number
                                    "based on the number you enter on range of 1-10"));
 
+    numSides = Math.abs(numSides);
+
     var validatedNumSides = validateEntry(numSides);    //Send the number to validation method and assign to another variable
     var results = getShape(validatedNumSides);      //Send the validated number to get the type of polygon and assign it to the results variable
 
@@ -17,11 +19,11 @@ function getNumberOfSides(){
 
 function validateEntry(numSides){       //Method to validate whether the entry is valid
 
-    while(numSides < 0 || numSides > 10 || isNaN(numSides)){    //Loop will execute until every condition is met
+    while(numSides < -10 || numSides > 10 || isNaN(numSides)){    //Loop will execute until every condition is met
         numSides = parseInt(prompt("Digital Koala states that is an invalid entry, TRY AGAIN!"));
     }
 
-    return numSides;
+    return Math.abs(numSides);
 }
 
 function getShape(validatedNumSides){       //Method to determine the type of polygon 

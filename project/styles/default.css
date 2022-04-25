@@ -14,21 +14,77 @@ body
   font-family: Courier, serif;
   color: #2a2e34;
   background-color: #ffe985;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 0%;
+  margin-right: 0%;
 }
 
 main{
   text-align: left;
 }
 
-nav{
+html, body{
+  height: 100%;
+}
 
+#container{
+  min-height: 100%;
+}
+
+#main{
+  overflow: auto;
+  padding-bottom: 100px;
+  text-align: left;
+}
+
+#footer{
+  background-color: #2a2e34;
+  position: relative;
+  height: 100px;
+  margin-top: -100px;
+  clear: both;
+  margin: none;
 }
 
 h1{
   text-align: center;
   margin-top: 50px;
+}
+
+.tabs{
+  margin-left: 50px;
+}
+
+.container{
+  color: #ff8000;
+  background-color: #2a2e34;
+  border-radius: 3px;
+  padding: 15px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+form{
+
+}
+
+input[type=text], input[type=submit] {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid;
+  border-color:#ff8000;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+input[type=text], select, textarea{
+  border: 1px solid #ff8000;
+  box-sizing: border-box;
+  resize: vertical;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 ul{

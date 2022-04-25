@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <title> Flying Bees LLC</title>
+        <link href = "styles/default.css" type = "text/css" rel = "stylesheet">
+        <!-- link to style sheet here -->
+    </head>
+
+    <body>
+        <nav class="tabs">
+            <ul>
+                <li><a class="active" href="./">Flying Bees LLC</a></li>
+                <li><a href="honey.html">Honey</a></li>
+                <li><a href="queens.html">Queens</a></li>
+                <li><a href="hive.html">Hives</a></li>
+                <li><a href="pollination.html">Pollination</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+            <br><br>
+            <h1>Feel free to contact us!</h1>
+
+            <div class="container">
+                <form>
+                    <label for="firstname">First Name*</label>
+                    <input id="fname" type="text" id="firstname" placeholder="First Name" required>
+
+                    <label for="lastname">Last Name*</label>
+                    <input id="lname" type="text" id="lastname" placeholder="Last Name" required>
+
+                    <label for="phonenumber">Phone Number*</label>
+                    <input id="" type="text" id="firstname" placeholder="Name" required>
+
+                    <br><br>
+
+                    <label for="inquiry">Inquiry</label>
+                    <select id="typeInquiry" id="inquiry" placeholder="Inquiry">
+                        <option value="Honey">Honey</option>
+                        <option value="Queens">Queen Bees</option>
+                        <option value="Hive">Hive Removal</option>
+                        <option value="Pollination">Pollination</option>
+                    </select>
+                    <br><br><br>
+                    <label for="message">Message*</label>
+                    <textarea rows="5 "id="message" placeholder="Additional" required></textarea>
+
+                    <input type="submit" onclick="contactUs()" value="Submit">
+
+                </form>
+            </div> 
+
+        </main>
+
+        <div></div>
+        <div data-include = "components/footer.html"></div>
+        <script src = "scripts/htmlinclude.js"></script>
+    </body>
+</html>
