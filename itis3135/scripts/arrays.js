@@ -16,7 +16,7 @@ function addSalary(){
     
 }
 
-function displayResults(){
+function displayResults(){e
 
     var salarySum = 0;
     var max;

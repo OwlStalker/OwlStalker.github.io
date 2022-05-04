@@ -1,0 +1,203 @@
+header{
+    font-family: Courier, serif;
+    text-align: left;
+    font-size: 50px;
+    margin-top: 50px;
+  }
+  
+  body
+  {
+    font-family: Courier, serif;
+    color: #2a2e34;
+    background-color: #ffe985;
+    border: #2a2e34;
+  }
+  
+  main{
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+  
+  }
+  
+  footer{
+    margin-top: 70px;
+    color: #2a2e34;
+    text-align: center;
+  }
+  
+  footer a{
+    text-decoration: none;
+    color: #2a2e34;
+  }
+  
+  footer a:hover{
+    background-color: #2a2e34;
+    color: #ff8000;
+    text-decoration: none;
+  }
+  
+  h1{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  
+  .tabs{
+    margin-left: 50px;
+  }
+  
+  .container{
+    color: #ff8000;
+    background-color: #2a2e34;
+    border-radius: 3px;
+    padding: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: left;
+  }
+  
+  form{
+  
+  }
+  
+  input[type=text], input[type=submit] {
+    display: inline-block;
+    width: 100%;
+    border: 1px solid;
+    border-color:#ff8000;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  
+  input[type=text], select, textarea{
+    border: 1px solid #ff8000;
+    box-sizing: border-box;
+    resize: vertical;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  
+  ul{
+    list-style-type: none;
+    margin-top: 50px;
+    padding: 0px;
+  }
+  
+  li{
+    float: left;
+  }
+  
+  li a{
+    display: block;
+    padding: 16px;
+    background-color: #2a2e34;
+    color: #ff8000;
+    text-decoration: none;
+  }
+  
+  #activeBlock{
+    background-color: #ffc300;
+    color: #2a2e34;
+  }
+  
+  img{
+    padding: 10px;
+    border-radius: 45px;
+    border-color: #2a2e34;
+    border-style: groove;
+    border-width: 5px;
+  }
+
+  .image-container{
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    align-items: left;
+  }
+  
+  .image-container{
+    max-width: 400px;
+    position: relative;
+    margin: auto;
+  }
+  
+  .previous{
+    right: 440px;
+  }
+
+  .next{
+    left: 450px;
+  }
+
+  .captionText{
+    color: #000000;
+    font-size: 14px;
+    position: absolute;
+    padding: 12px 12px;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+  }
+
+.slideNumber{
+  background-color: #5574C5;
+  color: white;
+  border-radius: 25px;
+  right: 0;
+  opacity: .5;
+  margin: 5px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  position: absolute;
+}
+
+.previous, .next{
+    font-size: 32px;
+}
+
+.previous,.next{
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    padding: 50px;
+    margin-top: -25px;
+}
+
+.next:hover{
+    transform: rotate(360deg);
+    transition: 1s;
+}
+
+.previous:hover{
+    transform: rotate(-360deg);
+    transition: 1s;
+}
+
+#footerdots{
+  text-align: center;
+}
+
+.footerdot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.5s ease;
+}
+
+.active, .footerdot:hover{
+    background-color: black;
+}
+    
+    

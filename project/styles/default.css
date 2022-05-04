@@ -2,51 +2,45 @@ header{
   font-family: Courier, serif;
   text-align: left;
   font-size: 50px;
-  margin-top: 25px;
+  margin-top: 50px;
 }
 
 body
 {
-  background-image: url(hexagon.jpg);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   font-family: Courier, serif;
   color: #2a2e34;
   background-color: #ffe985;
-  margin-left: 0%;
-  margin-right: 0%;
+  border: #2a2e34;
 }
 
 main{
   text-align: left;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+
 }
 
-html, body{
-  height: 100%;
+footer{
+  margin-top: 70px;
+  color: #2a2e34;
+  text-align: center;
 }
 
-#container{
-  min-height: 100%;
+footer a{
+  text-decoration: none;
+  color: #2a2e34;
 }
 
-#main{
-  overflow: auto;
-  padding-bottom: 100px;
-  text-align: left;
-}
-
-#footer{
+footer a:hover{
   background-color: #2a2e34;
-  position: relative;
-  height: 100px;
-  margin-top: -100px;
-  clear: both;
-  margin: none;
+  color: #ff8000;
+  text-decoration: none;
 }
 
 h1{
   text-align: center;
+  margin-bottom: 50px;
   margin-top: 50px;
 }
 
@@ -61,6 +55,7 @@ h1{
   padding: 15px;
   margin-left: 50px;
   margin-right: 50px;
+  text-align: left;
 }
 
 form{
@@ -89,7 +84,7 @@ input[type=text], select, textarea{
 
 ul{
   list-style-type: none;
-  margin-top: 40px;
+  margin-top: 50px;
   padding: 0px;
 }
 
@@ -111,7 +106,7 @@ a:hover
   color: #2a2e34;
 }
 
-.active{
+#activeBlock{
   background-color: #ffc300;
   color: #2a2e34;
 }
@@ -120,6 +115,7 @@ img{
   padding: 10px;
   border-radius: 45px;
   border-color: #2a2e34;
+  size
 }
 
 video{

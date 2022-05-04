@@ -3,14 +3,15 @@
     <head>
         <meta charset="utf-8" />
         <title> Flying Bees LLC</title>
-        <link href = "styles/default.css" type = "text/css" rel = "stylesheet">
-        <!-- link to style sheet here -->
+        <link href = "styles/slideshow.css" type = "text/css" rel = "stylesheet">
+        <script src="scripts/jquery-3.6.0.js"></script>
+
     </head>
 
     <body>
         <nav class="tabs">
             <ul>
-                <li><a class="active" href="./">Flying Bees LLC</a></li>
+                <li><a id="activeBlock" href="./">Flying Bees LLC</a></li>
                 <li><a href="honey.html">Honey</a></li>
                 <li><a href="queens.html">Queens</a></li>
                 <li><a href="hive.html">Hives</a></li>
@@ -27,10 +28,59 @@
                 Normally we sell each queen bee for $25 each. Contact us 
                 for more business inquires. 
             </p>
-            <img src="images/queenbee.jpg" alt="Picture of a Queen Bee">
+
+            <div class="image-container">
+
+                <a class="previous" onclick="moveSlides(-1)">
+                  <i class="circle-left">&#8249;</i>
+                </a>
+      
+                <a class="next" onclick="moveSlides(1)">
+                  <i class="circle-right">&#8250;</i>
+                </a>
+      
+                <div class="slide">
+                  <div class="slideNumber">1</div>
+      
+                  <img src="images/queenbee.jpg" alt="Queen Bee">
+                </div>
+      
+                <div class="slide">
+                  <div class="slideNumber">2</div>
+      
+                  <img src="images/queenbee2.jpg" alt="Queen Bee in a cage.">
+                </div>
+      
+                <div class="slide">
+                  <div class="slideNumber">3</div>
+      
+                  <img src="images/queenbee3.jpg" alt="Raising queen bees.">
+                </div>
+      
+                <div class="slide">
+                  <div class="slideNumber">4</div>
+      
+                  <img src="images/queenbee4.jpg" alt="Queen bee in a cage.">
+                </div>
+      
+                <div class="slide">
+                  <div class="slideNumber">5</div>
+      
+                  <img src="images/queenbee5.jpg" alt="Queen bee in a cage within the hive.">
+                </div>
+              </div><br>
+      
+              <div id="footerdots"> 
+                <span class="footerdot" onclick="activeSlide(1)"></span>
+                <span class="footerdot" onclick="activeSlide(2)"></span>
+                <span class="footerdot" onclick="activeSlide(3)"></span>
+                <span class="footerdot" onclick="activeSlide(4)"></span>
+                <span class="footerdot" onclick="activeSlide(5)"></span>
+              </div>
         </main>
         
         <div data-include = "components/footer.html"></div>
+        <script src="scripts/slideshow.js"></script>
         <script src = "scripts/htmlinclude.js"></script>
     </body>
 </html>
