@@ -22,16 +22,23 @@
                 <option value="Joe">Joe</option>
                 <option value="Alex">Alex</option>
                 <option value="Ener">Ener</option>
+                <option value="Bill">Bill</option>
             </select>
 
             <label for="salary">Enter salary : $</label>
-            <input type="number" id="salary" name="salary">
-            <button onclick="addSalary()" id="addSalary">Add Salary</button>
-            <button onclick="displayResults()" id="displayResults">Display Results</button>
-            <button onclick="displaySalary()" id="displaySalary">Display Salary</button>
+            <select id="salary" name="salary">
+                <option value="45000">45,000</option>
+                <option value="70000">70,000</option>
+                <option value="110000">110,000</option>
+                <option value="150000">150,000</option>
+            </select>
+
+            <button id="addSalary">Add Salary</button>
+            <button id="displayResults">Display Results</button>
+            <button id="displaySalary">Display Salary</button>
 
             <div id="results"></div>
-            <table id="table_results"></table>
+            <div id="table_results"></div>
         </main>
         
         <div data-include="components/footer.html"></div>
