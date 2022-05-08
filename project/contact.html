@@ -8,10 +8,10 @@
         <link href = "styles/normalize.css" type = "text/css" rel = "stylesheet">
         
 
-        <script type="text/javascript" src="scripts/jquery-3.6.0.js"></script>
+        <script src="scripts/jquery-3.6.0.js"></script>
         <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
-        <script type="text/javascript" src="scripts/contact.js"></script>
-        <script type="text/javascript" src="scripts/date_picker.js"></script>
+        <script src="scripts/contact.js"></script>
+        <script src="scripts/date_picker.js"></script>
 
     </head>
 
@@ -33,16 +33,16 @@
 
             <div class="container">
                 <form action="#">
-                    <input id="fname" type="text" id="firstname" placeholder="First Name" required>
+                    <input id="fname" type="text" placeholder="First Name" required>
 
-                    <input id="lname" type="text" id="lastname" placeholder="Last Name" required>
+                    <input id="lname" type="text" placeholder="Last Name" required>
 
-                    <input id="" type="text" id="firstname" placeholder="Phone Number" required>
+                    <input id="phoneNumber" type="text" placeholder="Phone Number" required>
 
                     <br><br>
 
-                    <label for="inquiry">Inquiry</label>
-                    <select id="typeInquiry" id="inquiry" placeholder="Inquiry">
+                    <label for="typeInquiry">Inquiry</label>
+                    <select id="typeInquiry">
                         <option value="Honey">Honey</option>
                         <option value="Queen Bee">Queen Bees</option>
                         <option value="Hive">Hive Removal</option>
@@ -52,7 +52,7 @@
                     <input type="text" placeholder="Select a date if you picked Honey, Queen Bees, or Hive Removal." id="datepicker">
                     <br><br><br>
                     
-                    <textarea rows="5 "id="message" placeholder="Please add any details for your scheduled appointment, including a time to come out." required></textarea>
+                    <textarea id="message" placeholder="Please add any details for your scheduled appointment, including a time to come out." required></textarea>
 
                     <input type="submit" onclick="contactUs()" value="Submit">
 
