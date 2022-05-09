@@ -4,6 +4,10 @@
         <meta charset="utf-8" />
         <title> Flying Bees LLC</title>
         <link href = "styles/default.css" type = "text/css" rel = "stylesheet">
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src = "scripts/ajax.js"></script>
+
+
         <!-- link to style sheet here -->
         <style>
             body{
@@ -24,6 +28,7 @@
                 <li><a href="hive.html">Hives</a></li>
                 <li><a href="pollination.html">Pollination</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="ourTeam.html">Our Team</a></li>
             </ul>
         </nav><br><br><br>
         
@@ -44,10 +49,15 @@
                 farmers all the time which is when we bring our family of bees to a piece 
                 of farmed land and they get to work pollinating our clients' crops.
                 </p>
+            </div><br><br>
+
+            <div class="container">
+                <h1>Our Team</h1>
+                <div id="team"></div>
             </div>
         </main>
 
-        <div data-include = "components/footer.html"></div>
         <script src = "scripts/htmlinclude.js"></script>
+        <div data-include = "components/footer.html"></div>
     </body>
 </html>

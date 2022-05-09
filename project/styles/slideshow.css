@@ -11,6 +11,10 @@ header{
     color: #2a2e34;
     background-color: #ffe985;
     border: #2a2e34;
+    background-image: url(../images/honeycomb.png);
+    background-repeat: no-repeat;
+    background-size: 250%;
+    background-position: center;
   }
   
   main{
@@ -113,7 +117,6 @@ header{
     max-width: 800px;
     position: relative;
     margin: auto;
-    align-items: left;
   }
   
   .image-container{
