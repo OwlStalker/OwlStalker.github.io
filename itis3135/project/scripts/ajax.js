@@ -18,7 +18,7 @@ $(document).ready(function() {
 
                 $("#team").append
                     ("Name: " + value.name + "<br>" +
-                    "Title: " + value.title + "<br>" +
+                    "Position: " + value.title + "<br>" +
                     "Years Worked with Flying Bees LLC: " + value.bio + "<br><br>");
                     })
             });
